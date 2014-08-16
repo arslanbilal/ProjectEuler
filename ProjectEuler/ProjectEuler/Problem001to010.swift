@@ -28,6 +28,7 @@ func problem001() -> Int
     return sum
 }
 
+
 //Promlem 2
 func problem002() -> Int
 {
@@ -55,10 +56,32 @@ func problem002() -> Int
 }
 
 
-
-
-
-
-
-
-
+//Problem 3
+func problem003() -> Int
+{
+    var prime = 0
+    
+    func isPrime(value: Int) -> Bool
+    {
+        for var i:Int = Int(pow(Float(value),0.5)); i > 1; i--
+        {
+            if value % i == 0
+            {
+                return false
+            }
+        }
+        return true
+    }
+    
+    for var i = Int(pow(600_851_475_143,0.5)); i > 1; i--
+    {
+        if 600_851_475_143 % i == 0
+        {
+            if isPrime(i)
+            {
+                return i
+            }
+        }
+    }
+    return -1
+}

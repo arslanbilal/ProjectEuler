@@ -8,4 +8,4 @@
 
 import Foundation
 
-println(problem002())
+println(problem003())
