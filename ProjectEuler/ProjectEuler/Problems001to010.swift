@@ -8,6 +8,14 @@
 
 import Foundation
 
+extension String
+{
+    func elementOfIndex(i:Int) -> String
+    {
+        return String(Array(self)[i])
+    }
+}
+
 //Problem 1
 func problem001() -> Int
 {
@@ -84,4 +92,38 @@ func problem003() -> Int
         }
     }
     return -1
+}
+
+
+//Problem 4
+func problem004() -> Int
+{
+    var result = 0
+    func isPalindrome(value: String) -> Bool
+    {
+        for var i = 0; i <= countElements(value)/2; i++
+        {
+            if value.elementOfIndex(i) != value.elementOfIndex(countElements(value) - i - 1) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    for var i = 100; i <= 999; i++
+    {
+        for var j = 100; j <= 999; j++
+        {
+            var value:Int = i*j
+            
+            if isPalindrome(String(value))
+            {
+                if result < value
+                {
+                    result = value
+                }
+            }
+        }
+    }
+    return result
 }
