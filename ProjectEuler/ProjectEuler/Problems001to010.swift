@@ -8,6 +8,8 @@
 
 import Foundation
 
+//////     ##  The Auxiliary Functions  ##
+
 extension String
 {
     func elementOfIndex(i:Int) -> String
@@ -15,6 +17,23 @@ extension String
         return String(Array(self)[i])
     }
 }
+
+func isPrime(value: Int) -> Bool
+{
+    for var i:Int = Int(pow(Float(value),0.5)); i > 1; i--
+    {
+        if value % i == 0
+        {
+            return false
+        }
+    }
+    return true
+}
+
+
+
+
+//////     ##  The Problems Solutions   ##
 
 //Problem 1
 func problem001() -> Int
@@ -68,18 +87,6 @@ func problem002() -> Int
 func problem003() -> Int
 {
     var prime = 0
-    
-    func isPrime(value: Int) -> Bool
-    {
-        for var i:Int = Int(pow(Float(value),0.5)); i > 1; i--
-        {
-            if value % i == 0
-            {
-                return false
-            }
-        }
-        return true
-    }
     
     for var i = Int(pow(600_851_475_143,0.5)); i > 1; i--
     {
@@ -164,4 +171,28 @@ func problem006() -> Int
         squareOfSum += i
     }
     return ((squareOfSum * squareOfSum) - sumOfSquare)
+}
+
+
+//Problem 7
+func problem007() -> Int
+{
+    var number: Int = 0
+    var index: Int = 2
+    var result: Int = -1
+    
+    for ;;
+    {
+        if isPrime(index)
+        {
+            number++
+        }
+        if number == 10_001
+        {
+            result = index
+            break
+        }
+        index++
+    }
+    return result
 }
