@@ -127,3 +127,26 @@ func problem004() -> Int
     }
     return result
 }
+
+
+//Problem 5
+func problem005() -> Int
+{
+    var result: Int = 1
+    
+    for var i = 19; i > 1; i--
+    {
+        if result % i != 0
+        {
+            for var j = 2; j <= i; j++
+            {
+                if (result * j) % i == 0
+                {
+                    result *= j
+                    break
+                }
+            }
+        }
+    }    
+    return result
+}

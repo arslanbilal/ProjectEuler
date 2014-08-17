@@ -8,4 +8,5 @@
 
 import Foundation
 
-println(problem004())
+// Select the problem and write in the println for the solution..
+println(problem005())
