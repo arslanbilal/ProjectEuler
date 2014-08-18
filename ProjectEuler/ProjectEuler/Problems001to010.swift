@@ -12,6 +12,11 @@ import Foundation
 
 extension String
 {
+    var count: Int
+    {
+        return countElements(self)
+    }
+    
     func elementOfIndex(i:Int) -> String
     {
         return String(Array(self)[i])
@@ -29,7 +34,6 @@ func isPrime(value: Int) -> Bool
     }
     return true
 }
-
 
 
 
@@ -108,9 +112,9 @@ func problem004() -> Int
     var result = 0
     func isPalindrome(value: String) -> Bool
     {
-        for var i = 0; i <= countElements(value)/2; i++
+        for var i = 0; i <= value.count/2; i++
         {
-            if value.elementOfIndex(i) != value.elementOfIndex(countElements(value) - i - 1) {
+            if value.elementOfIndex(i) != value.elementOfIndex(value.count - i - 1) {
                 return false
             }
         }

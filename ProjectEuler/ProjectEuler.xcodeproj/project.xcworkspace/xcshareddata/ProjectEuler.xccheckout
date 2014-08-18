@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BD38C27D-DC8E-44C2-B377-D61CA7D93101</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProjectEuler</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EAB22026B21E5A8B024ACA5E46E1A7821528F34C</key>
+		<string>https://github.com/ArslanBilal/ProjectEuler.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProjectEuler/ProjectEuler.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EAB22026B21E5A8B024ACA5E46E1A7821528F34C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ArslanBilal/ProjectEuler.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAB22026B21E5A8B024ACA5E46E1A7821528F34C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAB22026B21E5A8B024ACA5E46E1A7821528F34C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectEuler</string>
+		</dict>
+	</array>
+</dict>
+</plist>
