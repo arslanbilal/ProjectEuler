@@ -225,3 +225,26 @@ func problem008() -> Int
     }
     return greatestProduct
 }
+
+
+//Problem 9
+func problem009() -> Int
+{
+    for var i: Int = 1; i < 1000; i++
+    {
+        for var j: Int = i; j < 1000; j++
+        {
+            for var k: Int = j; k < 1000; k++
+            {
+                if (i*i + j*j) == k*k
+                {
+                     if (i + j + k) == 1000
+                     {
+                        return i * j * k
+                    }
+                }
+            }
+        }
+    }
+    return -1
+}
