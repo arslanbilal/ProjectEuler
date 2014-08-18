@@ -248,3 +248,19 @@ func problem009() -> Int
     }
     return -1
 }
+
+
+//Problem 10
+func problem010() -> Int
+{
+    var sum: Int = 0
+    
+    for var i: Int = 2; i < 2_000_000; i++
+    {
+        if isPrime(i)
+        {
+            sum += i
+        }
+    }
+    return sum
+}
