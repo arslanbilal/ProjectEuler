@@ -1,5 +1,5 @@
 //
-//  Problem001to010.swift
+//  Problems001to010.swift
 //  ProjectEuler
 //
 //  Created by Bilal ARSLAN on 16/08/14.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-//////     ##  The Problems Solutions   ##
+//////     ##  The Problems 001 - 010 Solutions   ##
 
 //Problem 1
 func problem001() -> Int
@@ -34,13 +34,14 @@ func problem001() -> Int
 //Promlem 2
 func problem002() -> Int
 {
+    let border = 4_000_000
     var sum: Int = 2
     var num1: Int = 1
     var num2: Int = 2
     
-    for var i = 0; i<4_000_000; i++
+    for var i = 0; i<border; i++
     {
-        if num2 > 4_000_000
+        if num2 > border
         {
             break;
         }

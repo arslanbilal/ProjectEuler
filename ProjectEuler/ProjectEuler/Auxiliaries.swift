@@ -12,7 +12,7 @@ import Foundation
 //////     ##  The Auxiliary Functions  ##
 
 extension String
-    {
+{
     var count: Int
         {
         return countElements(self)
@@ -36,6 +36,3 @@ func isPrime(value: Int) -> Bool
     }
     return true
 }
-
-
-
