@@ -36,3 +36,13 @@ func isPrime(value: Int) -> Bool
     }
     return true
 }
+
+func isPalindrome(value: String) -> Bool
+{
+    for var i = 0; i <= value.count/2; i++ {
+        if value.elementOfIndex(i) != value.elementOfIndex(value.count - i - 1) {
+            return false
+        }
+    }
+    return true
+}
