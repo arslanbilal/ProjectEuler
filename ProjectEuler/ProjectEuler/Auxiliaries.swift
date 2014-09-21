@@ -13,8 +13,7 @@ import Foundation
 
 extension String
 {
-    var count: Int
-        {
+    var count: Int {
         return countElements(self)
     }
     
@@ -27,10 +26,8 @@ extension String
 
 func isPrime(value: Int) -> Bool
 {
-    for var i:Int = Int(pow(Float(value),0.5)); i > 1; i--
-    {
-        if value % i == 0
-        {
+    for var i:Int = Int(pow(Float(value),0.5)); i > 1; i-- {
+        if value % i == 0 {
             return false
         }
     }
