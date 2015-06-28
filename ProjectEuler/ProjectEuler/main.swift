@@ -9,4 +9,9 @@
 import Foundation
 
 // Select the problem and write in the println for the solution..
-println(problem011())
+
+
+/**
+*  Urgent solve problem 12 with efficient
+*/
+//print(problem012())

@@ -13,20 +13,20 @@ import Foundation
 
 extension String
 {
-    var count: Int {
-        return countElements(self)
+    var length: Int {
+        return characters.count
     }
     
     func elementOfIndex(i:Int) -> String
     {
-        return String(Array(self)[i])
+        return String(Array(arrayLiteral: self)[i])
     }
 }
 
 
-func isPrime(value: Int) -> Bool
+public func isPrime(value: Int) -> Bool
 {
-    for var i:Int = Int(pow(Float(value),0.5)); i > 1; i-- {
+    for var i = Int(pow(Float(value),0.5)); i > 1; i-- {
         if value % i == 0 {
             return false
         }
@@ -34,12 +34,31 @@ func isPrime(value: Int) -> Bool
     return true
 }
 
-func isPalindrome(value: String) -> Bool
+public func isPalindrome(value: String) -> Bool
 {
-    for var i = 0; i <= value.count/2; i++ {
-        if value.elementOfIndex(i) != value.elementOfIndex(value.count - i - 1) {
+    for var i = 0; i <= value.length/2; i++ {
+        if value.elementOfIndex(i) != value.elementOfIndex(value.length - i - 1) {
             return false
         }
     }
     return true
 }
+
+public func getTriangularNumberWith(number: Int) -> Int {
+    return number * (number + 1) / 2
+}
+
+public func numberOfDvisiorOf(number: Int) -> Int {
+    
+    var count = 1 // number is number's one divisior.
+    
+    for var i = (number / 2); i > 0; i-- {
+        if number % i == 0 {
+            count++
+        }
+    }
+    return count
+}
+
+
+
