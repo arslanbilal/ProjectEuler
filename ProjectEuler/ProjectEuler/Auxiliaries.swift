@@ -19,7 +19,7 @@ extension String
     
     func elementOfIndex(i:Int) -> String
     {
-        return String(Array(arrayLiteral: self)[i])
+        return String(Array(self.characters)[i])
     }
 }
 
