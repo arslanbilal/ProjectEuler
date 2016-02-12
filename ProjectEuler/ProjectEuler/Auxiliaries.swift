@@ -11,8 +11,7 @@ import Foundation
 
 //////     ##  The Auxiliary Functions  ##
 
-extension String
-{
+extension String {
     var length: Int {
         return characters.count
     }
@@ -24,8 +23,7 @@ extension String
 }
 
 
-public func isPrime(value: Int) -> Bool
-{
+public func isPrime(value: Int) -> Bool {
     for var i = Int(pow(Float(value),0.5)); i > 1; i-- {
         if value % i == 0 {
             return false
@@ -34,8 +32,7 @@ public func isPrime(value: Int) -> Bool
     return true
 }
 
-public func isPalindrome(value: String) -> Bool
-{
+public func isPalindrome(value: String) -> Bool {
     for var i = 0; i <= value.length/2; i++ {
         if value.elementOfIndex(i) != value.elementOfIndex(value.length - i - 1) {
             return false
@@ -48,17 +45,24 @@ public func getTriangularNumberWith(number: Int) -> Int {
     return number * (number + 1) / 2
 }
 
-public func numberOfDvisiorOf(number: Int) -> Int {
+public func numberOfDivisiorOf(number number: Int) -> Int {
+    var count = 0 // number is number's one divisior.
+    let sqrtOfNumber = Int(pow(Float(number), 0.5))
     
-    var count = 1 // number is number's one divisior.
-    
-    for var i = (number / 2); i > 0; i-- {
+    for var i = 1; i <= sqrtOfNumber; i++ {
         if number % i == 0 {
-            count++
+            count += 2
         }
     }
+    
+    //Correction if the number is a perfect square
+    if sqrtOfNumber * sqrtOfNumber == number {
+        count -= 1
+    }
+    
     return count
 }
 
-
-
+public func sumOf(number number: Int) -> Int {
+    return (number * (number + 1)) / 2
+}

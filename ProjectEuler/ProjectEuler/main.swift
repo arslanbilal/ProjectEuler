@@ -10,4 +10,4 @@ import Foundation
 
 // Select the problem and write in the println for the solution..
 
-print(problem001())
+print(problem012())

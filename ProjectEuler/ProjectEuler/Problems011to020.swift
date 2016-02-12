@@ -8,11 +8,11 @@
 
 import Foundation
 
+
 //////     ##  The Problems 011 - 020 Solutions   ##
 
 //Problem 11
-func problem011() -> Int
-{
+func problem011() -> Int {
     var array: [[Int]] =
     [
         [08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 08],
@@ -90,65 +90,54 @@ func problem011() -> Int
     return max
 }
 
-
 //Problem 12
-func problem012()-> Int
-{
-    return -1
+func problem012()-> Int {
+    var triangleNumberDivisors = 0
+    var index = 0
+    
+    while triangleNumberDivisors < 500 {
+        index += 1
+        triangleNumberDivisors = numberOfDivisiorOf(number: sumOf(number: index))
+    }
+    return sumOf(number: index)
 }
-
 
 //Problem 13
-func problem013()-> Int
-{
+func problem013()-> Int {
     return -1
 }
-
 
 //Problem 14
-func problem014()-> Int
-{
+func problem014()-> Int {
     return -1
 }
-
 
 //Problem 15
-func problem015()-> Int
-{
+func problem015()-> Int {
     return -1
 }
-
 
 //Problem 16
-func problem016()-> Int
-{
+func problem016()-> Int {
     return -1
 }
-
 
 //Problem 17
-func problem017()-> Int
-{
+func problem017()-> Int {
     return -1
 }
-
 
 //Problem 18
-func problem018()-> Int
-{
+func problem018()-> Int {
     return -1
 }
-
 
 //Problem 19
-func problem019()-> Int
-{
+func problem019()-> Int {
     return -1
 }
 
-
 //Problem 20
-func problem020()-> Int
-{
+func problem020()-> Int {
     return -1
 }

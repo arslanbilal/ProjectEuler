@@ -8,11 +8,11 @@
 
 import Foundation
 
+
 //////     ##  The Problems 001 - 010 Solutions   ##
 
 //Problem 1
-func problem001() -> Int
-{
+func problem001() -> Int {
     var sum:Int = 0
     
     for i in 3...999 {
@@ -27,10 +27,8 @@ func problem001() -> Int
     return sum
 }
 
-
 //Promlem 2
-func problem002() -> Int
-{
+func problem002() -> Int {
     let border = 4_000_000
     var sum: Int = 2
     var num1: Int = 1
@@ -51,10 +49,8 @@ func problem002() -> Int
     return sum	
 }
 
-
 //Problem 3
-func problem003() -> Int
-{
+func problem003() -> Int {
     for var i = Int(pow(600_851_475_143,0.5)); i > 1; i-- {
         if 600_851_475_143 % i == 0 {
             if isPrime(i) {
@@ -65,10 +61,8 @@ func problem003() -> Int
     return -1
 }
 
-
 //Problem 4
-func problem004() -> Int
-{
+func problem004() -> Int {
     var result = 0
     
     for var i = 100; i <= 999; i++ {
@@ -85,10 +79,8 @@ func problem004() -> Int
     return result
 }
 
-
 //Problem 5
-func problem005() -> Int
-{
+func problem005() -> Int {
     var result: Int = 1
     
     for var i = 19; i > 1; i-- {
@@ -104,10 +96,8 @@ func problem005() -> Int
     return result
 }
 
-
 //Problem 6
-func problem006() -> Int
-{
+func problem006() -> Int {
     var sumOfSquare: Int = 0
     var squareOfSum: Int = 0
     
@@ -118,10 +108,8 @@ func problem006() -> Int
     return ((squareOfSum * squareOfSum) - sumOfSquare)
 }
 
-
 //Problem 7
-func problem007() -> Int
-{
+func problem007() -> Int {
     var number: Int = 0
     var index: Int = 2
     var result: Int = -1
@@ -139,10 +127,8 @@ func problem007() -> Int
     return result
 }
 
-
 //Problem 8
-func problem008() -> Int
-{
+func problem008() -> Int {
     var greatestProduct: Int = 0
     var temp: Int = 1
     
@@ -161,10 +147,8 @@ func problem008() -> Int
     return greatestProduct
 }
 
-
 //Problem 9
-func problem009() -> Int
-{
+func problem009() -> Int {
     for var i: Int = 1; i < 1000; i++ {
         for var j: Int = i; j < 1000; j++ {
             for var k: Int = j; k < 1000; k++ {
@@ -179,10 +163,8 @@ func problem009() -> Int
     return -1
 }
 
-
 //Problem 10
-func problem010() -> Int
-{
+func problem010() -> Int {
     var sum: Int = 0
     
     for var i: Int = 2; i < 2_000_000; i++ {
